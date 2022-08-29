@@ -172,7 +172,7 @@ class MapboxMapBuilder implements MapboxMapOptionsSink {
   }
 
   @Override
-  public void set AttributionButtonGravity(int gravity) {
+  public void setAttributionButtonGravity(int gravity) {
     switch (gravity) {
       case 0:
         options.attributionGravity(Gravity.TOP | Gravity.START);
