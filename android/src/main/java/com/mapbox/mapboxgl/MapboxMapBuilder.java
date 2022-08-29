@@ -14,7 +14,7 @@ import io.flutter.plugin.common.BinaryMessenger;
 
 class MapboxMapBuilder implements MapboxMapOptionsSink {
   public final String TAG = getClass().getSimpleName();
-  private final MapboxMapOptions options = new MapboxMapOptions().attributionEnabled(true);
+  private final MapboxMapOptions options = new MapboxMapOptions().attributionEnabled(false);
   private boolean trackCameraPosition = false;
   private boolean myLocationEnabled = false;
   private boolean dragEnabled = true;
@@ -172,7 +172,7 @@ class MapboxMapBuilder implements MapboxMapOptionsSink {
   }
 
   @Override
-  public void setAttributionButtonGravity(int gravity) {
+  public void set AttributionButtonGravity(int gravity) {
     switch (gravity) {
       case 0:
         options.attributionGravity(Gravity.TOP | Gravity.START);
